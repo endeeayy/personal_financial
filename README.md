@@ -4,7 +4,7 @@
 ## Mục lục
 1. [Giới thiệu](#gthieu)
 2. [Triển khai](#trkhai)
-3. [Phụ lục](#phluch)
+3. [Phụ lục](#phluc)
 4. [Cài đặt](#caidat)
 
 <a name="gthieu"> </a>
