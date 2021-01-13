@@ -145,7 +145,7 @@ export default function Home({ token }: Props) {
         {showData ? (
           <div>
             <div className={styles.container}>
-              <h2>Data</h2>
+              <h2>Dữ Liệu</h2>
               <FlowPieChart transactionList={transactionList} />
               <CategoryPieChart transactionList={transactionList} />
             </div>
@@ -153,7 +153,7 @@ export default function Home({ token }: Props) {
         ) : null}
         {showBudget ? (
           <div className={styles.container}>
-            <h2>Budget</h2>
+            <h2>Ngân Sách</h2>
             <CategoryList transactionList={transactionList} />
           </div>
         ) : null}

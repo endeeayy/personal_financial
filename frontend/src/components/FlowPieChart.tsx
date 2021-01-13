@@ -37,14 +37,14 @@ export default function PieChart({transactionList}: Props): ReactElement {
         width={'400px'}
         height={'280px'}
         chartType="PieChart"
-        loader={<div>Loading Chart</div>}
+        loader={<div>Đang tải...</div>}
         data={[
-          ['Category', 'Amount'],
-          ['Income', income],
-          ['Expenses', expense],
+          ['Mục Đích', 'Số Tiền'],
+          ['Thu Nhập', income],
+          ['Chi Tiêu', expense],
         ]}
         options={{
-          title: 'Income vs Expenses',
+          title: 'Thu Nhập vs Chi Tiêu',
           backgroundColor: "#ffffff",
           colors: ['green', 'red'],
           titleTextStyle: {color: 'black'},

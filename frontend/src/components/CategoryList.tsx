@@ -38,9 +38,9 @@ export default function CategoryList({transactionList}: Props): ReactElement {
       <table>   
         <thead>
           <tr>
-            <th>Category</th>
-            <th>Budget</th>
-            <th>Spent</th>
+            <th>Mục Đích</th>
+            <th>Ngân sách</th>
+            <th>Khoản Chi</th>
           </tr>
         </thead>
         <tbody>

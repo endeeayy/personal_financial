@@ -15,12 +15,12 @@ export default function Balance({ transactionList }: Props): ReactElement {
       var amount: number = Number(transaction.amount)
       total = transaction.income ? total+amount : total-amount;
     })
-    return Number(total).toFixed(2);
+    return Number(total).toFixed(0);
   }
 
   return (
     <div>
-      <h2 className={styles.pieChart}>Balance: ${calculateTotal(transactionList)}</h2>
+      <h2 className={styles.pieChart}>Số Dư: {calculateTotal(transactionList)} đ</h2>
     </div>
   )
 }

@@ -16,9 +16,9 @@ export default function TransactionList({
       <table>
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Category</th>
-            <th>Amount</th>
+            <th>Thời Gian</th>
+            <th>Mục Đích</th>
+            <th>Số Tiền</th>
             <th></th>
           </tr>
         </thead>

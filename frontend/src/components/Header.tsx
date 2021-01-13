@@ -26,7 +26,7 @@ export default function Header({
 
   return (
     <nav>
-      <li className={styles.headerLogo}>Financial Freedom</li>
+      <li className={styles.headerLogo}>Personal Financial</li>
       <div className={styles.headerDropDown}>
         <div
           className={styles.dropbtn}

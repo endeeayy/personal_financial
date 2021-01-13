@@ -52,7 +52,7 @@ export default function AddTransaction({
             setIncome(true);
           }}
         >
-          Income
+          Thu Nhập
         </button>
         <button
           type="submit"
@@ -64,10 +64,10 @@ export default function AddTransaction({
             setIncome(false);
           }}
         >
-          Expense
+          Chi Tiêu
         </button>
-        <label className={styles.labelStyle}>Amount</label>
-        <label className={styles.labelStyle}>Category</label>
+        <label className={styles.labelStyle}>Số Tiền</label>
+        <label className={styles.labelStyle}>Mục Đích</label>
         <input
           type="number"
           value={amount}
@@ -86,7 +86,7 @@ export default function AddTransaction({
             setCategory(e.target.value);
           }}
         />
-        <label className={styles.labelStyle}>Date</label>
+        <label className={styles.labelStyle}>Thời Gian</label>
         <div></div>
         <input
           type="date"
@@ -108,7 +108,7 @@ export default function AddTransaction({
             setDate(new Date().toLocaleDateString().split('/').reverse().join('-'));
           }}
         >
-          Add Transaction
+          Ghi Nhận
         </button>
       </form>
     </div>

@@ -1,30 +1,30 @@
 
 export const INCOME_CATEGORIES: string[] = [
   '',
-  'Paycheck',
-  'Student Loans',
-  'Gift',
-  'Savings',
-  'Bonus',
-  'Dividends',
-  'Other'
+  'Lương',
+  'Khoản Vay',
+  'Quà Tặng',
+  'Tiết Kiệm',
+  'Thưởng',
+  'Lợi Nhuận',
+  'Khác'
 ];
 
 export const EXPENSE_CATEGORIES: string[] = [
   '',
-  'Housing',
-  'Transportation',
-  'Food',
-  'Utilities',
-  'Clothing',
-  'Health',
-  'Insurance',
-  'Household Items',
-  'Subscriptions',
-  'Debt',
-  'Savings',
-  'Entertainment',
-  'Other'
+  'Tiền Nhà',
+  'Đi Lại',
+  'Thức Ăn',
+  'Trang Thiết Bị',
+  'Trang Phục',
+  'Sức Khỏe',
+  'Bảo Hiểm',
+  'Đồ Gia Dụng',
+  'Gói Dịch Vụ',
+  'Khoản Nợ',
+  'Tiết Kiệm',
+  'Giải Trí',
+  'Khác'
 ];
 
 export const baseUrl: string = "http://127.0.0.1:8000"

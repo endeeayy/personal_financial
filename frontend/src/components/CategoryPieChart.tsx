@@ -42,12 +42,12 @@ export default function CategoryPieChart({transactionList}: Props): ReactElement
           width={'400px'}
           height={'280px'}
           chartType="PieChart"
-          loader={<div>Loading Chart</div>}
+          loader={<div>Đang tải...</div>}
           data={
             categoryMap
           }
           options={{
-            title: 'Expense Categories',
+            title: 'Danh Mục Chi Tiêu',
             backgroundColor: "#ffffff",
             titleTextStyle: {color: 'black'},
             legendTextStyle: { color: 'black' }
