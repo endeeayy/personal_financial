@@ -67,7 +67,7 @@
 ## 4. Cài đặt
 ***Máy cần cài đặt Node.js để có thể sử dụng được phần mềm***
 
-1. Download ứng dụng [Personal Financial]()
+1. Download ứng dụng [Personal Financial](https://drive.google.com/file/d/1Bx_V1VmO6ALrjIOFkMfXjMTu7V74lHkG/view?usp=sharing)
 2. Giải nén file
 3. Điều hướng đến đường dẫn `[cd backend]`
 4. Cài đặt virtualenv nếu máy chưa cài đặt `[pip install virtualenv]`
