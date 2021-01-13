@@ -1,62 +1,94 @@
-# Financial Freedom
+# Personal Financial
+Ứng dụng quản lí tài chính, thống kê thu chi cá nhân phát triển trên nền tảng web.
 
-[Check out the project live here!](https://financial-freedom.netlify.app/)
-![Final Pic](demo-images/dashboard-pic.png)
-A full stack budgeting application that manages users and their transactions.
+## Mục lục
+1. [Giới thiệu](#gthieu)
+2. [Triển khai](#trkhai)
+3. [Phụ lục](#phluch)
+4. [Cài đặt](#caidat)
 
-## Technologies
+<a name="gthieu"> </a>
+## 1. Giới thiệu chung
+### 1.1. Bài toán
+- Trong bối cảnh nền kinh tế - xã hội loài người gặp nhiều khó khăn, biến cố do đại dịch Covid-19 hoành hành, vấn đề tài chính của mỗi cá nhân, hộ gia đình, các doanh nghiệp, tổ chức lớn được coi là một nỗi lo hàng đầu ở thời điểm hiện tại. Các chính sách đóng cửa/hạn chế biên giới trên đất liền, biển đảo hay là cả đường hàng không đang có những tác động tiêu cực mạnh mẽ đến tình hình kinh tế của toàn bộ người dân. Mặt khác, các biện pháp cách ly tại khu tập trung và cách ly tại hộ gia đình cũng đang khiến cho nguồn thu tiền tệ của người dân gặp nhiều khó khăn, thách thức.
 
-- **React** (for the frontend framework)
-- **Typescript** (for the Javascript syntax)
-- **CSS** (for the styling)
-- **Python** (for the server side language)
-- **Django** (for the server side framework)
-- **SQLite** (for the database)
+- Để có thể vừa đáp ứng được các tiêu chuẩn về y tế, dịch tễ, cách ly xã hội mà vẫn không làm kiệt quệ ngân sách của mình, bản thân mỗi chúng ta cần học cách thống kê chi tiết tình trạng thu – chi tài chính cá nhân, lên kế hoạch cho các khoản tiền mua/bán một cách khoa học.
 
-## Current Functionality
+- Nhận biết tầm quan trọng của những vấn đề trên, nhóm chúng tôi lên kế hoạch xây dựng một ứng dụng quản lý tài chính, thống kê trên nền tảng web.
 
-- Adding a transaction
-- Deleting a transaction
-- Showing your balance
-- Pie Charts that show
-  - Income vs Expenses
-  - Expense Category Comparison
-- A budget of what you want to spend on each category
-- Hot swap sections to customise the user interface
-- User support with login, logout and register functionality
-- Storing users tokens locally to remove the need to login every time
-- Can sign in using your Google Account
+### 1.2. Công nghệ sử dụng
+- Git - Github: Là một hệ thống quản lí mã nguồn tập trung thông qua các phiên bản phân tán trên các máy trạm của thành viên.
 
-I will continue to expand the functionality in the future.
+- ReactJS: Là một thư viện phát triển phía client vô cùng đa dụng, tùy biến tốt, chạy trên nền tảng ngôn ngữ JavaScript.
 
-## Set-up on your Machine
+- Python: Là một ngôn ngữ lập trình bậc cao dùng cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình. 
 
-_(To get it running entirely locally you will need to change the baseUrl in frontend/src/Constants.ts to 127.0.0.1:8000 otherwise the frontend will connect to the remote API)_
+- Typescript: Là một ngôn ngữ lập trình được phát triển và duy trì bởi Microsoft. Nó là một tập hợp siêu cú pháp nghiêm ngặt của JavaScript và thêm tính năng kiểu tĩnh tùy chọn vào ngôn ngữ. TypeScript được thiết kế để phát triển các ứng dụng lớn và chuyển đổi sang JavaScript.
 
-1. Clone the project to your machine `[git clone https://github.com/joshuarichards001/budgeting-web-app.git]`
-2. Navigate into the directory `[cd budgeting-web-app]`
-3. Navigate into the backend directory `[cd backend]`
-4. Install virtualenv if you haven't already `[pip install virtualenv]`
-5. Create the virtual environment `[virtualenv env]`
-6. Activate the virtual environment
-	Linux `[source env/bin/activate]`
-	Windows `[env/script/activate.bat]`
-7. Install the dependencies `[pip install -r requirements.txt]`
-8. Navigate into the frontend directory `[cd ../frontend]`
-9. Install the dependencies `[npm install]`
+- Django: Là một Framework lập trình Web bậc cao, mã nguồn mở được viết bằng Ngôn ngữ lập trình Python.
 
-Then to run this application you will need to perform the following in two separate terminals:
+- SQLite: Là một thư viện phần mềm mà triển khai một SQL Database Engine, không cần máy chủ, không cần cấu hình, khép kín và nhỏ gọn. Nó là một cơ sở dữ liệu, không cần cấu hình, có nghĩa là giống như các cơ sở dữ liệu khác mà bạn không cần phải cấu hình nó trong hệ thống của mình.
 
-1. In the first terminal go into backend `[cd backend]` and run `[python3 manage.py runserver]`
-2. In the second terminal go into frontend `[cd frontend]` and run `[npm start]`
+- RESTful API: Là một tiêu chuẩn dùng trong việc thết kế các thiết kế API cho các ứng dụng web để quản lý các resource. RESTful là một trong những kiểu thiết kế API được sử dụng phổ biến nhất ngày nay.
 
-## Application in Action
+- Visual Studio Code: Là một phần mềm soạn thảo code phát triển rất tích cực với sự hỗ trợ của Microsoft. Các tài liệu chính thức được duy trì tốt.
 
-Here is the login page that a new user is greeted with.
-![Login](demo-images/login-pic.png)
+- Ant Design: Là một Framework dành cho thiết kế React UI với nhiều Component đẹp, đa dụng, đa dạng, dễ dàng tùy chỉnh, và đã được viết sẵn giúp giảm thiểu thời gian thiết kế các component.
 
-Here is the dashboard that is the core page of the application
-![Full Tour](demo-images/dashboard-pic.png)
+- NPM: Là công cụ tạo và quản lí các thư viện lập trình JavaScript trên môi trường Node.js.
 
-A showcase of the "Hot swap sections" functionality
-![Hide](demo-images/hiddencard-pic.png)
+<a name="trkhai"> </a>
+## 2. Triển khai
+### 2.1. Mục tiêu phần mềm
+- Xây dựng một ứng dụng quản lý tài chính, thống kê trên nền tảng web với các chức năng chính như:
+	- Đăng nhập/đăng xuất để bảo mật thông tin cá nhân người dùng.
+	- Thống kê các khoản thu – chi (thêm/sửa/xóa).
+	- Cung cấp đa dạng các danh mục tiêu dùng, hỗ trợ cho việc ghi chú thông minh.
+	- Cung cấp biểu đồ đánh giá tổng quan các khoản thu – chi và đánh giá tương tác giữa ngân sách dành cho thu và chi.
+	- Cung cấp bảng kế hoạch chi tiêu khách quan, khoa học.
+	- Một số tính năng phụ khác đang cập nhật thêm…
+
+<a name="phluc"> </a>
+## 3. Phụ lục
+### 3.1. Thành viên:
+- [Ngô Duy Anh (MSV: 18001093):](https://www.facebook.com/anh.duy.11/)
+	- Xây dựng front-end.
+	- Testing, tìm bug và fix bug.
+
+- [Nguyễn Đình Tuấn Anh (MSV: 18001094):](https://www.facebook.com/rekt.anh/)
+	- Tạo Github project, lên kế hoạch xây dựng phần mềm, phân chia công việc cụ thể.
+	- Nghiên cứu và quyết định các công nghệ sử dụng.
+	- Xây dựng front-end.
+	- Tổng hợp thông tin, viết báo cáo.
+
+- [Tạ Quang Đức (MSV: 18001117):](https://www.facebook.com/duc.ta.14473)
+	- Xây dựng Database sử dụng SQLite và Django.
+	- Xây dựng RESTful API.
+
+<a name="caidat"> </a>
+## 4. Cài đặt
+***Máy cần cài đặt Node.js để có thể sử dụng được phần mềm***
+
+1. Download ứng dụng [Personal Financial]()
+2. Giải nén file
+3. Điều hướng đến đường dẫn `[cd backend]`
+4. Cài đặt virtualenv nếu máy chưa cài đặt `[pip install virtualenv]`
+5. Tạo môi trường ảo `[virtualenv env]`
+6. Kích hoạt môi trường
+	- Linux `[source env/bin/activate]`
+	- Windows `[env/script/activate.bat]`
+7. Cài đặt các dependencies `[pip install -r requirements.txt]`
+8. Điều hướng đến đường dẫn frontend `[cd ../frontend]`
+9. Cài đặt các dependencies `[npm install]`
+
+Tiếp theo để chạy phần mềm làm như sau:
+
+1. Powershell thứ nhất ở backend chạy:
+	- `[python manage.py migrate]`
+	- `[python manage.py createsuperuser]` (điền thông tin)
+	- `[python manage.py runserver]`
+2. Powershell thứ hai ở frontend chạy: 
+	- `[npm start]`
+
+*Trong trường hợp xảy ra vấn đề trong quá trình cài đặt và sử dụng, vui lòng [liên hệ](https://www.facebook.com/duc.ta.14473) để được giải đáp và hướng dẫn. Xin cảm ơn!*
+
