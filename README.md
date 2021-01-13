@@ -82,6 +82,7 @@
 9. Cài đặt các dependencies `[npm install]`
 
 Tiếp theo để chạy phần mềm làm như sau:
+
 *Mở 2 Powershell: 1 Powershell điều hướng đến thư mục back end, 1 Powershell điều hướng đến thư mục frontend*
 
 <a name="b1"> </a>
