@@ -57,7 +57,7 @@ export default function Home({ token }: Props) {
 
   const onLogoutClick = (e) => {
     e.preventDefault();
-    if (window.confirm("Are you sure you want to log out of this account?")) {
+    if (window.confirm("Xác Nhận Đăng Xuất?")) {
       logoutUser(token);
       localStorage.clear();
       window.location.reload(false);
