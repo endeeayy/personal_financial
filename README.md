@@ -33,8 +33,6 @@
 
 - **Visual Studio Code**: Là một phần mềm soạn thảo code phát triển rất tích cực với sự hỗ trợ của Microsoft. Các tài liệu chính thức được duy trì tốt.
 
-- **Ant Design**: Là một Framework dành cho thiết kế React UI với nhiều Component đẹp, đa dụng, đa dạng, dễ dàng tùy chỉnh, và đã được viết sẵn giúp giảm thiểu thời gian thiết kế các component.
-
 - **NPM**: Là công cụ tạo và quản lí các thư viện lập trình JavaScript trên môi trường Node.js.
 
 <a name="trkhai"> </a>
