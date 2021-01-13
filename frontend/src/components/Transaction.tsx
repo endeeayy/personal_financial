@@ -14,7 +14,7 @@ export default function Transaction({
     <tr style={{ color: transaction.income ? "green" : "red" }}>
       <td className={styles.transactionItem}>{transaction.date}</td>
       <td className={styles.transactionItem}>{transaction.category}</td>
-      <td className={styles.transactionItem}>{transaction.amount}</td>
+      <td className={styles.transactionItem}>{transaction.amount*100/100}</td>
       <td className={styles.transactionItem}>
         <button
           className={styles.deleteButton}

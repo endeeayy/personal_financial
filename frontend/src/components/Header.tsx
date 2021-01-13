@@ -49,22 +49,22 @@ export default function Header({
               onClick={transClick}
               style={{ color: showTrans ? "white" : "grey" }}
             >
-              {showTrans ? showEye() : hideEye()} Transactions
+              {showTrans ? showEye() : hideEye()} Giao Dịch
             </a>
             <a
               onClick={dataClick}
               style={{ color: showData ? "white" : "grey" }}
             >
-              {showData ? showEye() : hideEye()} Data
+              {showData ? showEye() : hideEye()} Dữ Liệu
             </a>
             <a
               onClick={budgClick}
               style={{ color: showBudg ? "white" : "grey" }}
             >
-              {showBudg ? showEye() : hideEye()} Budget
+              {showBudg ? showEye() : hideEye()} Ngân Sách
             </a>
             <a onClick={logoutClick} style={{ marginTop: "30px" }}>
-              Log Out
+              Đăng Xuất
             </a>
           </div>
         ) : null}

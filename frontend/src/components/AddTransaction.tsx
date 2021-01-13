@@ -17,7 +17,7 @@ export default function AddTransaction({
   const incomeColor: string = "#e5ffe7";
   const categorySelect = useRef<HTMLSelectElement>(null);
   const [income, setIncome] = useState(false);
-  const [amount, setAmount] = useState(0.0);
+  const [amount, setAmount] = useState(0);
   const [category, setCategory] = useState("");
   const [color, setColor] = useState(expenseColor);
   const [date, setDate] = useState(new Date().toLocaleDateString().split('/').reverse().join('-'));
