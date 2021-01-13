@@ -7,7 +7,6 @@ import FlowPieChart from "./components/FlowPieChart";
 import CategoryPieChart from "./components/CategoryPieChart";
 import CategoryList from "./components/CategoryList";
 import Footer from "./components/Footer";
-import TimeFrame from "./components/TimeFrame";
 import styles from "./Main.module.css";
 import {
   getTransactions,
@@ -23,26 +22,13 @@ interface Props {
 export default function Home({ token }: Props) {
   const [userId, setUserId] = useState(-1);
   const [transactionList, setTransactionList] = useState<Transaction[]>([]);
-
   const [showTransactions, setShowTransactions] = useState(true);
-  const [showAddTransactions, setShowAddTransactions] = useState(true);
-  const [showBalance, setShowBalance] = useState(true);
   const [showData, setShowData] = useState(true);
   const [showBudget, setShowBudget] = useState(true);
-
-  const onAddTransClick = (e) => {
-    e.preventDefault();
-    setShowAddTransactions(!showAddTransactions);
-  };
 
   const onTransClick = (e) => {
     e.preventDefault();
     setShowTransactions(!showTransactions);
-  };
-
-  const onBalanceClick = (e) => {
-    e.preventDefault();
-    setShowBalance(!showBalance);
   };
 
   const onDataClick = (e) => {
@@ -127,9 +113,6 @@ export default function Home({ token }: Props) {
           showData={showData}
           showBudg={showBudget}
         />
-      </div>
-      <div className={styles.timeframeContainer}>
-        <TimeFrame />
       </div>
       <div className={styles.contentContainer}>
         {showTransactions ? (

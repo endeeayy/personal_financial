@@ -22,6 +22,7 @@ export default function Category({ category, amount }: Props): ReactElement {
         <input
           onChange={(e) => setBudget(e.target.valueAsNumber)}
           type="number"
+          min={0}
           style={{ width: "100px", backgroundColor: "#cccccc", border: "none", borderRadius: "4px" }}
         />
       </td>

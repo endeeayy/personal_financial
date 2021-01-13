@@ -1,8 +1,6 @@
 import React, { ReactElement, useState, useRef, useEffect } from "react";
 import styles from "../Main.module.css";
 import { EXPENSE_CATEGORIES, INCOME_CATEGORIES } from "../helper/Constants";
-// import moment from "moment";
-// import DatePicker from "antd";
 import "react-datepicker/dist/react-datepicker.css";
 import "../Main.module.css";
 
@@ -71,6 +69,7 @@ export default function AddTransaction({
         <input
           type="number"
           value={amount}
+          min={0}
           className={styles.inputStyle}
           style={{ backgroundColor: color }}
           onChange={(e) => {

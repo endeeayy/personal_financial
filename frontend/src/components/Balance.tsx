@@ -20,7 +20,7 @@ export default function Balance({ transactionList }: Props): ReactElement {
 
   return (
     <div>
-      <h2 className={styles.pieChart}>Số Dư: {calculateTotal(transactionList)} đ</h2>
+      <h2 className={styles.pieChart}>Số Dư: {calculateTotal(transactionList)}đ</h2>
     </div>
   )
 }
