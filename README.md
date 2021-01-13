@@ -17,25 +17,25 @@
 - Nhận biết tầm quan trọng của những vấn đề trên, nhóm chúng tôi lên kế hoạch xây dựng một ứng dụng quản lý tài chính, thống kê trên nền tảng web.
 
 ### 1.2. Công nghệ sử dụng
-- Git - Github: Là một hệ thống quản lí mã nguồn tập trung thông qua các phiên bản phân tán trên các máy trạm của thành viên.
+- **Git - Github**: Là một hệ thống quản lí mã nguồn tập trung thông qua các phiên bản phân tán trên các máy trạm của thành viên.
 
-- ReactJS: Là một thư viện phát triển phía client vô cùng đa dụng, tùy biến tốt, chạy trên nền tảng ngôn ngữ JavaScript.
+- **ReactJS**: Là một thư viện phát triển phía client vô cùng đa dụng, tùy biến tốt, chạy trên nền tảng ngôn ngữ JavaScript.
 
-- Python: Là một ngôn ngữ lập trình bậc cao dùng cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình. 
+- **Python**: Là một ngôn ngữ lập trình bậc cao dùng cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình. 
 
-- Typescript: Là một ngôn ngữ lập trình được phát triển và duy trì bởi Microsoft. Nó là một tập hợp siêu cú pháp nghiêm ngặt của JavaScript và thêm tính năng kiểu tĩnh tùy chọn vào ngôn ngữ. TypeScript được thiết kế để phát triển các ứng dụng lớn và chuyển đổi sang JavaScript.
+- **Typescript**: Là một ngôn ngữ lập trình được phát triển và duy trì bởi Microsoft. Nó là một tập hợp siêu cú pháp nghiêm ngặt của JavaScript và thêm tính năng kiểu tĩnh tùy chọn vào ngôn ngữ. TypeScript được thiết kế để phát triển các ứng dụng lớn và chuyển đổi sang JavaScript.
 
-- Django: Là một Framework lập trình Web bậc cao, mã nguồn mở được viết bằng Ngôn ngữ lập trình Python.
+- **Django**: Là một Framework lập trình Web bậc cao, mã nguồn mở được viết bằng Ngôn ngữ lập trình Python.
 
-- SQLite: Là một thư viện phần mềm mà triển khai một SQL Database Engine, không cần máy chủ, không cần cấu hình, khép kín và nhỏ gọn. Nó là một cơ sở dữ liệu, không cần cấu hình, có nghĩa là giống như các cơ sở dữ liệu khác mà bạn không cần phải cấu hình nó trong hệ thống của mình.
+- **SQLite**: Là một thư viện phần mềm mà triển khai một SQL Database Engine, không cần máy chủ, không cần cấu hình, khép kín và nhỏ gọn. Nó là một cơ sở dữ liệu, không cần cấu hình, có nghĩa là giống như các cơ sở dữ liệu khác mà bạn không cần phải cấu hình nó trong hệ thống của mình.
 
-- RESTful API: Là một tiêu chuẩn dùng trong việc thết kế các thiết kế API cho các ứng dụng web để quản lý các resource. RESTful là một trong những kiểu thiết kế API được sử dụng phổ biến nhất ngày nay.
+- **RESTful API**: Là một tiêu chuẩn dùng trong việc thết kế các thiết kế API cho các ứng dụng web để quản lý các resource. RESTful là một trong những kiểu thiết kế API được sử dụng phổ biến nhất ngày nay.
 
-- Visual Studio Code: Là một phần mềm soạn thảo code phát triển rất tích cực với sự hỗ trợ của Microsoft. Các tài liệu chính thức được duy trì tốt.
+- **Visual Studio Code**: Là một phần mềm soạn thảo code phát triển rất tích cực với sự hỗ trợ của Microsoft. Các tài liệu chính thức được duy trì tốt.
 
-- Ant Design: Là một Framework dành cho thiết kế React UI với nhiều Component đẹp, đa dụng, đa dạng, dễ dàng tùy chỉnh, và đã được viết sẵn giúp giảm thiểu thời gian thiết kế các component.
+- **Ant Design**: Là một Framework dành cho thiết kế React UI với nhiều Component đẹp, đa dụng, đa dạng, dễ dàng tùy chỉnh, và đã được viết sẵn giúp giảm thiểu thời gian thiết kế các component.
 
-- NPM: Là công cụ tạo và quản lí các thư viện lập trình JavaScript trên môi trường Node.js.
+- **NPM**: Là công cụ tạo và quản lí các thư viện lập trình JavaScript trên môi trường Node.js.
 
 <a name="trkhai"> </a>
 ## 2. Triển khai
