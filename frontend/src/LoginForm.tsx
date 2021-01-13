@@ -28,15 +28,15 @@ export default function LoginForm({
     <div>
       <div className={styles.headerContainer}>
         <nav>
-          <li className={styles.headerLogo}>Financial Freedom</li>
+          <li className={styles.headerLogo}>Personal Financial</li>
         </nav>
       </div>
       <div className={styles.contentContainer}>
         <form className={styles.loginForm}>
           {showRegister ? (
-            <h1 style={{ paddingBottom: "20px" }}>Register</h1>
+            <h1 style={{ paddingBottom: "20px" }}>Đăng Ký</h1>
           ) : (
-            <h1 style={{ paddingBottom: "20px" }}>Login</h1>
+            <h1 style={{ paddingBottom: "20px" }}>Đăng Nhập</h1>
           )}
           {showRegister ? <label>Email</label> : null}
           {showRegister ? (
@@ -46,13 +46,14 @@ export default function LoginForm({
               className={styles.inputStyle}
             />
           ) : null}
-          <label className={styles.labelStyle}>User Name</label>
-          <input
+          <label className={styles.labelStyle}>Tài Khoản</label>
+          <input 
             value={userName}
             onChange={(e: any) => setUserName(e.target.value)}
             className={styles.inputStyle}
           />
-          <label className={styles.labelStyle}>Password</label>
+          
+          <label className={styles.labelStyle}>Mật Khẩu</label>
           <input
             value={password}
             onChange={(e: any) => setPassword(e.target.value)}
@@ -73,7 +74,7 @@ export default function LoginForm({
               className={styles.buttonStyle}
               style={{ backgroundColor: "#e0e0e0", flex: 1 }}
             >
-              Login
+              Đăng Nhập
             </button>
             <button
               className={styles.buttonStyle}
@@ -92,7 +93,7 @@ export default function LoginForm({
                 }
               }}
             >
-              Register
+              Đăng Ký
             </button>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -104,7 +105,7 @@ export default function LoginForm({
                 onLoginClick("testUser", "testUserPass");
               }}
             >
-              Login As Guest
+              Đăng Nhập tài khoản Khách
             </button>
             <GoogleLogin
               clientId="551797952328-07qc03g60octqej7u462de4vbgtfkbm9.apps.googleusercontent.com"
@@ -128,7 +129,7 @@ export default function LoginForm({
                       clip-rule="evenodd"
                     />
                   </svg>
-                  Sign in with Google
+                  Đăng Nhập bằng Google
                 </button>
               )}
               buttonText="Login with Google"
@@ -138,35 +139,10 @@ export default function LoginForm({
           </div>
           {loading ? (
             <p style={{ marginTop: "10px", marginLeft: '6px' }}>
-              Content Is Loading, this may take a minute...
+              Đang tải...
             </p>
           ) : null}
         </form>
-        <div className={styles.loginForm}>
-          <h1>Info</h1>
-          <p style={{ marginTop: "20px" }}>
-            You can either log in as a guest, register yourself, login with
-            google, or use some existing dummy users like:
-          </p>
-          <table style={{ marginTop: "20px", width: "100px" }}>
-            <thead>
-              <tr>
-                <th>Username</th>
-                <th>Password</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>user1</td>
-                <td>pass</td>
-              </tr>
-              <tr>
-                <td>user2</td>
-                <td>pass</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </div>
   );
