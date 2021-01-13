@@ -25,8 +25,7 @@ SECRET_KEY = secretkey = '!z_w07q!c1tllsf=6a8dib0vm!wm5nf_37899ly0ksk6f1fb&i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost',
-                 'financial-freedom-api.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -147,7 +146,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ORIGIN_WHITELIST = [
-    'https://financial-freedom.netlify.app',
     'http://localhost:8081',
     'http://localhost:3000',
 ]

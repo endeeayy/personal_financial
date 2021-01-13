@@ -38,7 +38,9 @@ _(To get it running entirely locally you will need to change the baseUrl in fron
 3. Navigate into the backend directory `[cd backend]`
 4. Install virtualenv if you haven't already `[pip install virtualenv]`
 5. Create the virtual environment `[virtualenv env]`
-6. Activate the virtual environment `[source env/bin/activate]`
+6. Activate the virtual environment
+	Linux `[source env/bin/activate]`
+	Windows `[env/script/activate.bat]`
 7. Install the dependencies `[pip install -r requirements.txt]`
 8. Navigate into the frontend directory `[cd ../frontend]`
 9. Install the dependencies `[npm install]`
