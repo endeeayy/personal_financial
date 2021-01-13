@@ -82,13 +82,17 @@
 9. Cài đặt các dependencies `[npm install]`
 
 Tiếp theo để chạy phần mềm làm như sau:
+*Mở 2 Powershell: 1 Powershell điều hướng đến thư mục back end, 1 Powershell điều hướng đến thư mục frontend*
 
+<a name="b1"> </a>
 1. Powershell thứ nhất ở backend chạy:
 	- `[python manage.py migrate]`
 	- `[python manage.py createsuperuser]` (điền thông tin)
 	- `[python manage.py runserver]`
 2. Powershell thứ hai ở frontend chạy: 
 	- `[npm start]`
+
+Sau khi vào được ứng dụng thì tiến hành đăng nhập bằng user đã tạo ở [bước 1](#b1) và sử dụng.
 
 *Trong trường hợp xảy ra vấn đề trong quá trình cài đặt và sử dụng, vui lòng [liên hệ](https://www.facebook.com/duc.ta.14473) để được giải đáp và hướng dẫn. Xin cảm ơn!*
 
